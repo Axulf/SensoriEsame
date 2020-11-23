@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="Applicazione Sensori"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="italic"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensori Accelerometri"
+        android:onClick="OpenAccelerometer"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensori Gravità"
+        android:onClick="OpenGravity"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensori Giroscopio"
+        android:onClick="OpenGyroscope"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensori Luce"
+        android:onClick="OpenLight"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensori Campo Magnetico"
+        android:onClick="OpenMagneticField"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensori Pressione"
+        android:onClick="OpenPressure"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensori Temperatura"
+        android:onClick="OpenTemperature"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista tutti i sensori"
+        android:onClick="OpenListAll"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opzioni"
+        android:onClick="OpenOptions"/>
+
+
+
+</LinearLayout>
