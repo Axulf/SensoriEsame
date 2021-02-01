@@ -2,9 +2,11 @@ package com.example.sensoriesame;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import java.util.List;
@@ -31,8 +33,15 @@ SensorManager sensorManager;
             btn.setLayoutParams(params);
             ll.addView(btn);
             lm.addView(ll);
-
+            final Context context = this;
+            btn.setOnClickListener(new OnClickListener() {
+                public void onClick(View view) {
+                    Intent intent = new Intent(context , SensorParameter.class);
+                    startActivity(intent);
+                }
+            });
         }
+
 
     }
     
